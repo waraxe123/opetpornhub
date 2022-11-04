@@ -156,7 +156,7 @@ async def search(client, InlineQuery : InlineQuery):
                             switch_pm_parameter="start")
 
 # Memulai Bot
-@app.on_message(filters.command("start"))
+@app.on_message(filters.command("xstart"))
 async def start(client, message : Message):
     value = str(message.chat.id)
     with open("member.txt", "a+") as file:
